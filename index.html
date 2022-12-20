@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ahmed Abdulgid</title>
+  <title>Ahmed Abdulgid | Home</title>
   <meta name="author" content="ahmedabdulgid" />
   <meta name="description" content="Ahmed Abdulgid - Web Developer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,7 +15,7 @@
   <link rel="stylesheet" type="text/css" href="./assets/css/app.min.css" />
 </head>
 
-<body>
+<body class="app home">
   <div id="preloader">
     <div class="loader_line"></div>
   </div>
@@ -25,7 +25,7 @@
     <div class="app_topbar">
       <div class="topbar_inner">
         <div class="logo" data-type="text">
-          <a class="text" href="#" aria-label="link"><span>Ahmed Abdulgid</span></a>
+          <a class="text" href="./index.html" aria-label="link"><span>Ahmed Abdulgid</span></a>
         </div>
         <div class="trigger">
           <div class="hamburger hamburger--slider">
@@ -82,9 +82,14 @@
 </div>
             </div>
             <div class="copyright">
-              <p>Copyright &copy; 2022</p>
+              <p>
+                <script>
+                  var dateNow = new Date(),
+                    year = dateNow.getFullYear();
+                  document.write("Copyright  &copy; " + year)
+                </script>
+              </p>
             </div>
-
           </div>
         </div>
       </div>
@@ -92,7 +97,7 @@
 
     <header class="app_header">
       <div class="logo" data-type="text">
-        <a class="text" href="#" aria-label="link"><span>Ahmed Abdulgid</span></a>
+        <a class="text" href="./index.html" aria-label="link"><span>Ahmed Abdulgid</span></a>
       </div>
       <nav class="menu">
         <ul class="transition_link">
@@ -472,13 +477,11 @@
 
 <footer class="app_footer">
   <div class="copyright">
-    <p>
-      <script>
-        const d = new Date();
-        let year = d.getFullYear();
-        document.write("Copyright © " + year)
-      </script>
-    </p>
+  <p>
+    <script> 
+          document.write("Copyright  &copy; " + year)
+    </script>
+  </p>
   </div>
   <div class="social">
   <ul>
